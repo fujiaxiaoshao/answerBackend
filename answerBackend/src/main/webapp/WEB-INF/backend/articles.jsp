@@ -14,13 +14,35 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>图文列表页</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/sb-admin.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
+    <link href="startbootstrap1.0.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="startbootstrap1.0.4/css/sb-admin.css" rel="stylesheet">
+    <link href="startbootstrap1.0.4/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script language="javascript" src=""></script>
 </head>
 <body>
+    <div style="background-color:#ffffff;">
+    <div class="container">
+        <div class="row" >
+        <div class="col-lg-12">
+            <h2>习题解析后台</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>图文标题</th>
+                        <th>分类</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="articleList">
 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

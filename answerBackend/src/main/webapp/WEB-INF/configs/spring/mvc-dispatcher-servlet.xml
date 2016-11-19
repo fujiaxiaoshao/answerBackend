@@ -31,6 +31,16 @@
 
 	<!-- 静态资源处理， css， js， imgs 	-->
 	<mvc:resources mapping="/backend/**" location="/WEB-INF/backend/" />
+	<mvc:resources mapping="/login/**" location="/WEB-INF/login/" />
+
+	<!-- 注册拦截器-->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<!-- 管理员后台权限使用拦截器-->
+			<mvc:mapping path="/backend/**"/>
+			<bean class="com.wulijiexi.answer.interceptor.AuthenticationInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 
 
 	<!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
